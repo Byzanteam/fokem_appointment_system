@@ -1,0 +1,9 @@
+.bundle/
+*.log
+pkg/
+Gemfile.lock
+tmp/
+
+idea
+
+test/dummy/log/*.log
