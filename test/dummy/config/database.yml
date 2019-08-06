@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 20
+  username: fxy
+  password:
+  host: localhost
+
+development:
+  <<: *default
+  database: fokem_appointment_systerm_development
+
+test:
+  <<: *default
+  database: fokem_appointment_systerm_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+production:
+  <<: *default
+  database: fokem_appointment_systerm_production
