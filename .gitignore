@@ -7,3 +7,4 @@ tmp/
 idea
 
 test/dummy/log/*.log
+node_modules
